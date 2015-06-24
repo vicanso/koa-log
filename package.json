@@ -1,5 +1,5 @@
 {
-  "name": "koa-logger",
+  "name": "koa-log",
   "description": "logger middlware for koa",
   "version": "0.0.1",
   "author": {
@@ -8,13 +8,13 @@
   },
   "keywords": [
     "koa",
-    "connection limit",
+    "logger",
     "middlware"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vicanso/koa-logger.git"
+    "url": "https://github.com/vicanso/koa-log.git"
   },
   "readmeFilename": "README.md",
   "devDependencies": {
