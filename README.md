@@ -1,4 +1,4 @@
-# logger middlware for koa
+# logger middlware for koa，refer to express/morgan and koa-logger
 
 ```js
 var koa = require('koa');
@@ -19,7 +19,7 @@ router.get('/', function *(next){
 });
 
 
-app.use(logger('logger-test'));
+app.use(logger());
 
 
 app.use(router.routes());

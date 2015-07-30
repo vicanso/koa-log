@@ -16,7 +16,7 @@ router.get('/', function *(next){
 });
 
 
-app.use(logger(['_track']));
+app.use(logger('dev'));
 
 
 app.use(router.routes());

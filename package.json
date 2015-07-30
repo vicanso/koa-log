@@ -1,7 +1,7 @@
 {
   "name": "koa-log",
   "description": "logger middlware for koa",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "author": {
     "name": "vicanso 小墨鱼",
     "email": "vicansocanbico@gmail.com"
@@ -12,7 +12,7 @@
     "middlware"
   ],
   "license": "MIT",
-  "main" : "./lib/logger.js",
+  "main": "./lib/logger.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/vicanso/koa-log.git"
@@ -28,7 +28,11 @@
   },
   "readme": "logger middlware for koa",
   "dependencies": {
+    "bytes": "^2.1.0",
+    "chalk": "^1.1.0",
     "debug": "^2.2.0",
-    "lodash": "^3.9.3"
+    "humanize-number": "0.0.2",
+    "lodash": "^3.9.3",
+    "passthrough-counter": "^1.0.0"
   }
 }
