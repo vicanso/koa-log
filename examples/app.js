@@ -17,7 +17,7 @@ router.get('/', function *(next){
 
 
 app.use(logger('combined'));
-
+app.use(logger('dev'));
 
 app.use(router.routes());
 
