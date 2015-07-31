@@ -1,7 +1,7 @@
 {
   "name": "koa-log",
   "description": "logger middlware for koa",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "author": {
     "name": "vicanso 小墨鱼",
     "email": "vicansocanbico@gmail.com"
@@ -28,6 +28,7 @@
   },
   "readme": "logger middlware for koa",
   "dependencies": {
+    "basic-auth": "^1.0.3",
     "bytes": "^2.1.0",
     "chalk": "^1.1.0",
     "debug": "^2.2.0",
