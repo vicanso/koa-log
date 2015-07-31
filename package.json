@@ -1,7 +1,7 @@
 {
   "name": "koa-log",
   "description": "logger middlware for koa",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "author": {
     "name": "vicanso 小墨鱼",
     "email": "vicansocanbico@gmail.com"
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/vicanso/koa-log.git"
   },
-  "readmeFilename": "README.md",
+  "readmeFilename": "./README.md",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-istanbul": "^0.10.0",
@@ -26,7 +26,10 @@
     "koa": "^0.21.0",
     "koa-router": "^5.1.2"
   },
-  "readme": "logger middlware for koa",
+  "files": [
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {
     "basic-auth": "^1.0.3",
     "bytes": "^2.1.0",
