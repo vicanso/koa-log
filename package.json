@@ -1,7 +1,7 @@
 {
   "name": "koa-log",
   "description": "logger middlware for koa",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "author": {
     "name": "vicanso 小墨鱼",
     "email": "vicansocanbico@gmail.com"
@@ -12,7 +12,6 @@
     "middlware"
   ],
   "license": "MIT",
-  "main": "./lib/logger.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/vicanso/koa-log.git"
