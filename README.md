@@ -131,31 +131,28 @@ advanced uses, this compile function is directly available.
 ## Examples
 
 ```js
-var koa = require('koa');
-var router = require('koa-router')();
-var logger = require('koa-log');
+'use strict';
+const Koa = require('koa');
+const app = new Koa();
+const koaLog = require('koa-log');
 
 
+app.use(koaLog());
 
-var app = koa();
-
-var index = 0;
-router.get('/', function *(next){
-  yield function(done){
-    setTimeout(done, 3000);
-  };
-  index++;
-  this.body = 'abcd' + index;
+app.use(koaLog('dev'));
+app.use((ctx, next) => {
+	const delay = new Promise(function(resolve, reject) {
+		setTimeout(resolve, 3000);
+	});
+	return delay.then(next);
 });
 
+// response
 
-app.use(logger('combined'));
+app.use(ctx => {
+	ctx.body = 'Hello World';
+});
 
-
-app.use(router.routes());
-
-var port = process.env.PORT || 10000;
-app.listen(port);
-console.dir('server listen on:' + port);
+app.listen(3000);
 
 ```

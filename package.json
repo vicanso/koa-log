@@ -1,37 +1,38 @@
 {
-  "name": "koa-log",
-  "description": "logger middlware for koa",
-  "version": "0.2.2",
-  "author": {
-    "name": "vicanso 小墨鱼",
-    "email": "vicansocanbico@gmail.com"
-  },
-  "keywords": [
-    "koa",
-    "logger",
-    "middlware"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vicanso/koa-log.git"
-  },
-  "readmeFilename": "./README.md",
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-istanbul": "^0.10.0",
-    "gulp-jshint": "^1.11.0",
-    "gulp-mocha": "^2.1.2",
-    "koa": "^0.21.0",
-    "koa-router": "^5.1.2"
-  },
-  "dependencies": {
-    "basic-auth": "^1.0.3",
-    "bytes": "^2.1.0",
-    "chalk": "^1.1.0",
-    "debug": "^2.2.0",
-    "humanize-number": "0.0.2",
-    "lodash": "^3.9.3",
-    "passthrough-counter": "^1.0.0"
-  }
+	"name": "koa-log",
+	"description": "logger middlware for koa",
+	"version": "0.2.2",
+	"author": {
+		"name": "vicanso 小墨鱼",
+		"email": "vicansocanbico@gmail.com"
+	},
+	"keywords": [
+		"koa",
+		"logger",
+		"middlware"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/vicanso/koa-log.git"
+	},
+	"readmeFilename": "./README.md",
+	"scripts": {
+		"test": "node ./node_modules/.bin/jshint ./lib/*.js && node ./node_modules/.bin/_mocha --reporter spec",
+		"test-cov": "node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --",
+		"test-travis": "node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly --"
+	},
+	"devDependencies": {
+		"istanbul": "^0.4.1",
+		"jshint": "^2.8.0",
+		"mocha": "^2.3.4"
+	},
+	"dependencies": {
+		"basic-auth": "^1.0.3",
+		"bytes": "^2.2.0",
+		"chalk": "^1.1.1",
+		"debug": "^2.2.0",
+		"humanize-number": "0.0.2",
+		"passthrough-counter": "^1.0.0"
+	}
 }
