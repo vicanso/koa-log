@@ -1,38 +1,38 @@
 {
-	"name": "koa-log",
-	"description": "logger middlware for koa",
-	"version": "2.0.0",
-	"author": {
-		"name": "vicanso 小墨鱼",
-		"email": "vicansocanbico@gmail.com"
-	},
-	"keywords": [
-		"koa",
-		"logger",
-		"middlware"
-	],
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/vicanso/koa-log.git"
-	},
-	"readmeFilename": "./README.md",
-	"scripts": {
-		"test": "node ./node_modules/.bin/jshint ./lib/*.js && node ./node_modules/.bin/_mocha --reporter spec",
-		"test-cov": "node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --",
-		"test-travis": "node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly --"
-	},
-	"devDependencies": {
-		"istanbul": "^0.4.1",
-		"jshint": "^2.8.0",
-		"mocha": "^2.3.4"
-	},
-	"dependencies": {
-		"basic-auth": "^1.0.3",
-		"bytes": "^2.2.0",
-		"chalk": "^1.1.1",
-		"debug": "^2.2.0",
-		"humanize-number": "0.0.2",
-		"passthrough-counter": "^1.0.0"
-	}
+  "name": "koa-log",
+  "description": "logger middlware for koa",
+  "version": "2.0.1",
+  "author": "Tree Xie <vicansocanbico@gmail.com>",
+  "keywords": [
+    "koa",
+    "logger",
+    "middlware"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vicanso/koa-log.git"
+  },
+  "readmeFilename": "./README.md",
+  "scripts": {
+    "test": "node ./node_modules/.bin/eslint ./lib/*.js && node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^8.0.0",
+    "eslint-plugin-import": "^1.6.1",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "basic-auth": "^1.0.3",
+    "bytes": "^2.2.0",
+    "chalk": "^1.1.1",
+    "debug": "^2.2.0",
+    "humanize-number": "0.0.2",
+    "passthrough-counter": "^1.0.0"
+  }
 }
