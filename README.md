@@ -1,5 +1,10 @@
 # koa-log
 
+[![Build Status](https://travis-ci.org/vicanso/koa-log.svg?branch=master)](https://travis-ci.org/vicanso/koa-log)
+[![Coverage Status](https://img.shields.io/coveralls/vicanso/koa-log/master.svg?style=flat)](https://coveralls.io/r/vicanso/koa-log?branch=master)
+[![npm](http://img.shields.io/npm/v/koa-log.svg?style=flat-square)](https://www.npmjs.org/package/koa-log)
+[![Github Releases](https://img.shields.io/npm/dm/koa-log.svg?style=flat-square)](https://github.com/vicanso/koa-log)
+
 HTTP request logger middleware for koa, refer to express/morgan and koa-logger
 
 ## API
